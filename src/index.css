@@ -1,0 +1,41 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-serif: 'Fraunces', Georgia, serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    --color-claude-terracotta: #CC785C;
+    --color-claude-coral: #D46B4E;
+    --color-claude-cream: #EDE8DF;
+    --color-claude-dark: #191716;
+    --color-claude-surface: #23211F;
+    --color-claude-border: #332F2B;
+  }
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-claude-dark);
+    color: var(--color-claude-cream);
+  }
+}
+
+.font-serif-claude {
+  font-family: var(--font-serif);
+}
+
+/* Custom scrollbars with warm Claude styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(25, 23, 22, 0.7);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(120, 113, 108, 0.4);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(204, 120, 92, 0.6);
+}

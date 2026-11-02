@@ -1,0 +1,6 @@
+{
+  "name": "REA — Reverse Engineer Anything",
+  "description": "Piattaforma avanzata per decostruire e ricreare qualsiasi app, sito, hardware o algoritmo con blueprint architetturali, codice pronto all'uso e sandbox interattiva.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
